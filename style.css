@@ -1,0 +1,31 @@
+body {
+	background: black;
+	color: white;
+	text-align: center;
+	font-size: 36px;
+}
+body.hd-portrait {
+	width: 1080px;
+	height: 1920px;
+	overflow: hidden;
+}
+.header-image {
+	width: 75%;
+	height: auto;
+}
+.section-20 {
+	height: 20%;
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+.section-40 {
+	height: 40%;
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+.section-header {
+	background: #c00;
+	font-size: 2em;
+	font-family: UniversCondensed;
+	padding: 20px;
+}
