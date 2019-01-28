@@ -4,6 +4,7 @@ body {
 	text-align: center;
 	font-size: 72px;
 	font-family: UniversRoman;
+	cursor: none;
 }
 body.hd-portrait {
 	width: 1080px;
