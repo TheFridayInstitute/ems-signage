@@ -45,4 +45,5 @@ ksort($event_details['current']);
 $event_details['current'] = array_values($event_details['current']);
 ksort($event_details['upcoming']);
 $event_details['upcoming'] = array_values($event_details['upcoming']);
+$event_details['upcoming'] = array();
 echo json_encode($event_details);

@@ -58,16 +58,20 @@ function getNewEvents() {
 getNewEvents();
 
 function switcher() {
-	$("#current-event").find('.event-time').text(current_events[current_event_index]['start_time'] + " - " + current_events[current_event_index]['end_time']);
-	$("#current-event").find('.event-title').text(current_events[current_event_index]['title']);
-	$("#current-event").find('.event-location').text(current_events[current_event_index]['room']);
-	if (current_event_index + 1 >= current_events.length) current_event_index = 0;
-	else current_event_index++;
-	$("#upcoming-event").find('.event-time').text(upcoming_events[upcoming_event_index]['start_time'] + " - " + upcoming_events[upcoming_event_index]['end_time']);
-	$("#upcoming-event").find('.event-title').text(upcoming_events[upcoming_event_index]['title']);
-	$("#upcoming-event").find('.event-location').text(upcoming_events[upcoming_event_index]['room']);
-	if (upcoming_event_index + 1 >= upcoming_events.length) upcoming_event_index = 0;
-	else upcoming_event_index++;
+	if (current_events.length > 0) {
+		$("#current-event").find('.event-time').text(current_events[current_event_index]['start_time'] + " - " + current_events[current_event_index]['end_time']);
+		$("#current-event").find('.event-title').text(current_events[current_event_index]['title']);
+		$("#current-event").find('.event-location').text(current_events[current_event_index]['room']);
+		if (current_event_index + 1 >= current_events.length) current_event_index = 0;
+		else current_event_index++;
+	}
+	if (upcoming_events.length > 0) {
+		$("#upcoming-event").find('.event-time').text(upcoming_events[upcoming_event_index]['start_time'] + " - " + upcoming_events[upcoming_event_index]['end_time']);
+		$("#upcoming-event").find('.event-title').text(upcoming_events[upcoming_event_index]['title']);
+		$("#upcoming-event").find('.event-location').text(upcoming_events[upcoming_event_index]['room']);
+		if (upcoming_event_index + 1 >= upcoming_events.length) upcoming_event_index = 0;
+		else upcoming_event_index++;
+	}
 }
 window.setInterval(function() {
 	switcher();
