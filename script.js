@@ -73,5 +73,8 @@ window.setInterval(function() {
 	switcher();
 }, 5000);
 window.setInterval(function() {
+	UpdateClock();
+}, 1000);
+window.setInterval(function() {
 	getNewEvents();
 }, 300000);
