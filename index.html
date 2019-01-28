@@ -2,10 +2,11 @@
 <html lang="en">
     <head>
         <!-- Required meta tags -->
-        <meta charset="utf-8" />
-        <meta content="width=device-width, initial-scale=1, shrink-to-fit=no" name="viewport" />
-        <link href="https://cdn.ncsu.edu/brand-assets/bootstrap-4/css/bootstrap.min.css" rel="stylesheet" />
-        <link href="style.css" rel="stylesheet" />
+        <meta charset="utf-8">
+        <meta content="width=device-width, initial-scale=1, shrink-to-fit=no" name="viewport">
+        <link href="https://cdn.ncsu.edu/brand-assets/fonts/include.css" rel="stylesheet" type="text/css" />
+        <link href="https://cdn.ncsu.edu/brand-assets/bootstrap-4/css/bootstrap.min.css" rel="stylesheet">
+        <link href="style.css" rel="stylesheet">
         <title>
             FI Digital Signage
         </title>
@@ -13,17 +14,43 @@
     <body class="hd-portrait">
         <div class="section-20">
           <img src="img/logo.png" class="header-image"/>
+          <div class="timestamp" id="clock"></div>
         </div>
-        <div class="section-40">
+        <div class="section-40 event-section">
           <h1 class="section-header">Happening Now</h1>
+            <div class="event" id="current-event">
+                
+                <div class="event-detail event-title">
+
+                </div>
+                <div class="event-detail event-time">
+                    
+                </div>
+                <div class="event-detail event-location">
+
+                </div>
+            </div>
         </div>
-        <div class="section-40">
+        <div class="section-40 event-section">
           <h1 class="section-header">Up Next</h1>
+            <div class="event" id="upcoming-event">
+                
+                <div class="event-detail event-title">
+
+                </div>
+                <div class="event-detail event-time">
+                    
+                </div>
+                <div class="event-detail event-location">
+
+                </div>
+            </div>
         </div>
         <!-- Optional JavaScript -->
         <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-        <script crossorigin="anonymous" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" src="https://code.jquery.com/jquery-3.3.1.slim.min.js" />
-        <script crossorigin="anonymous" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" />
-        <script src="https://cdn.ncsu.edu/brand-assets/bootstrap-4/js/bootstrap.min.js" />
+       <script   src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
+        <script src="https://cdn.ncsu.edu/brand-assets/bootstrap-4/js/bootstrap.min.js"></script>
+        <script src="script.js"></script>
     </body>
 </html>

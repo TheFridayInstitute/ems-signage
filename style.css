@@ -2,7 +2,8 @@ body {
 	background: black;
 	color: white;
 	text-align: center;
-	font-size: 36px;
+	font-size: 72px;
+	font-family: UniversRoman;
 }
 body.hd-portrait {
 	width: 1080px;
@@ -22,10 +23,34 @@ body.hd-portrait {
 	height: 40%;
 	padding-top: 10px;
 	padding-bottom: 10px;
+	overflow-y: hidden;
+}
+.event-section {
+	display: flex;
+	flex-wrap: wrap;
 }
 .section-header {
 	background: #c00;
-	font-size: 2em;
 	font-family: UniversCondensed;
+	font-size: 1em;
 	padding: 20px;
+}
+.event-section .section-header {
+	align-self: flex-start;
+	flex-grow: 1;
+}
+.event-section .event {
+	flex-grow: 1;
+	flex-basis: 100%;
+}
+#clock {
+	line-height: 1;
+}
+.event-detail {
+	font-size: 1em;
+	line-height: 1.1;
+}
+.event-title {
+	padding-bottom: 20px;
+	font-size: 1.5em;
 }
