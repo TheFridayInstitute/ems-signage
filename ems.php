@@ -4,7 +4,7 @@ require_once 'config.php';
 
 $client = new SoapClient(EMS_ENDPOINT);
 
-$response = $client->GetAllBookings(array('UserName' => USER, "Password" => PASS, "StartDate" => date("Y-m-d", strtotime("Monday")), "EndDate" => date("Y-m-d", strtotime("Monday")), "BuildingID" => -1, "ViewComboRoomComponents" => false));
+$response = $client->GetAllBookings(array('UserName' => USER, "Password" => PASS, "StartDate" => date("Y-m-d"), "EndDate" => date("Y-m-d"), "BuildingID" => -1, "ViewComboRoomComponents" => false));
 
 if (isset($_REQUEST["rooms"])) {
     $rooms = explode(",", $_REQUEST["rooms"]);
