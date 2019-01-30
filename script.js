@@ -53,6 +53,10 @@ function getNewEvents() {
 		var result = JSON.parse(data);
 		current_events = result['current'];
 		upcoming_events = result['upcoming'];
+		if (current_events.length > 0) $("#section-current-event").show();
+		else $("#section-current-event").hide();
+		if (upcoming_events.length > 0) $("#section-upcoming-event").show();
+		else $("#section-upcoming-event").hide();
 	});
 }
 getNewEvents();
