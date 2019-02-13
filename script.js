@@ -1,6 +1,6 @@
-var current_events = "";
+var current_events = [];
 var current_event_index = 0;
-var upcoming_events;
+var upcoming_events = [];
 var upcoming_event_index = 0;
 var clock = 0;
 var interval_msec = 1000;
@@ -47,6 +47,8 @@ function getUrlVars() {
 }
 
 function getNewEvents() {
+	current_events = [];
+	upcoming_events = [];
 	$.post("ems.php", {
 		rooms: getUrlVars()['rooms']
 	}, function(data) {
