@@ -12,8 +12,9 @@ body.hd-portrait {
 	overflow: hidden;
 }
 .header-image {
-	width: 75%;
+	width: 95%;
 	height: auto;
+	padding-bottom: 40px;
 }
 .section-20 {
 	height: 20%;
