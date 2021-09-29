@@ -11,6 +11,9 @@ body.hd-portrait {
 	height: 1920px;
 	overflow: hidden;
 }
+@-ms-viewport {
+	width: device-width;
+}
 .header-image {
 	width: 95%;
 	height: auto;
